@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پخش آنلاین حرفه‌ای فیلم</title>
+    <link rel="stylesheet" href="assets/css/_screen.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="myVideo" width="1000" height="562">
+                <source src="assets/videos/Lost_S01E03_720p_Farsi_Dubbed_(netpaak.com).mkv" type="video/mp4">
+                مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+            </video>
+            <div class="custom-controls">
+                <button id="playPauseBtn">⏯</button>
+                <span id="currentTime">00:00</span>
+                <input type="range" id="progressBar" value="0" max="100">
+                <span id="duration">00:00</span>
+                <button id="muteBtn">🔊</button>
+                <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1">
+                <button id="fullScreenBtn">⛶</button>
+            </div>
+        </div>
+    </div>
+    <a href="index.html"> اصلی</a>
+    <a href="login.html">ورود</a>
+    <a href="add.html">ثبت نام</a>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

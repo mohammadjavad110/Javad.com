@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OX-B',
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'OX-B';
+}
+
+.header {
+    position: relative;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: right;
+    height: 100%;
+}
+
+.header-content h1 {
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.movie-details {
+    margin-top: 20px;
+}
+
+.movie-details h2 {
+    font-size: 2em;
+}
+
+.movie-details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.buy-ticket {
+    background-color: #ffcc00;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.buy-ticket:hover {
+    background-color: #e6b800;
+}
+
+.movie-carousel {
+    padding: 40px;
+}
+
+.movie-carousel h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+
+.header {
+    padding: 40px;
+}
+
+.header h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.carousel-item {
+    flex: none;
+    width: 200px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+
+/* ----------------------------------------2-------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.movies {
+    padding: 20px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movies .movie-row img {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.quote {
+    background-color: #ff4a4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.profiles .profile {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.profiles .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer .social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.fon {
+    font-family: 'OX-B';
+}
+
+/* -----------------------------slider----------------------------------------------- */
+
+/* Slider container */
+/* Slider container */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Slides */
+  .slides .slide {
+    display: none;
+    position: relative;
+  }
+  
+  .slides .active {
+    display: block;
+  }
+  
+  /* Image */
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Title */
+  .title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  
+  /* Navigation buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Dots */
+  .dots {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .dots .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dots .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+/* -------------------------------------scorol--------------------------- */
+
+.movie-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  
+  .movie-scroll {
+    display: inline-block;
+  }
+  
+  .movie {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .movie img {
+    width: 200px;
+    height: auto;
+  }
+
+/* From Uiverse.io by Smit-Prajapati */ 
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: lightgrey;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 1s ease-in-out;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+}
+
+.logo {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.logo .logo-svg {
+  fill: white;
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.icon .svg {
+  fill: rgba(255, 255, 255, 0.797);
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.box {
+  position: absolute;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.389);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 1px solid white;
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover .svg {
+  fill: white;
+}
+
+.box1 {
+  width: 70%;
+  height: 70%;
+  bottom: -70%;
+  left: -70%;
+}
+
+.box1::before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+}
+
+.box1:hover::before {
+  opacity: 1;
+}
+
+.box1:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box2 {
+  width: 50%;
+  height: 50%;
+  bottom: -50%;
+  left: -50%;
+  transition-delay: 0.2s;
+}
+
+.box2::before {
+  background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+}
+
+.box2:hover::before {
+  opacity: 1;
+}
+
+.box2:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box3 {
+  width: 30%;
+  height: 30%;
+  bottom: -30%;
+  left: -30%;
+  transition-delay: 0.4s;
+}
+
+.box3::before {
+  background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+}
+
+.box3:hover::before {
+  opacity: 1;
+}
+
+.box3:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box4 {
+  width: 10%;
+  height: 10%;
+  bottom: -10%;
+  left: -10%;
+  transition-delay: 0.6s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .box {
+  bottom: -1px;
+  left: -1px;
+}
+
+.card:hover .logo {
+  transform: translate(0, 0);
+  bottom: 20px;
+  right: 20px;
+}
+
+/* -------------------------link chan-------------------- */
+
+  /* From Uiverse.io by Smit-Prajapati */ 
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: lightgrey;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 1s ease-in-out;
+  }
+  
+  .background {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+  }
+  
+  .logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .logo .logo-svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon .svg {
+    fill: rgba(255, 255, 255, 0.797);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+  
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box:hover .svg {
+    fill: white;
+  }
+  
+  .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -70%;
+    left: -70%;
+  }
+  
+  .box1::before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+  }
+  
+  .box1:hover::before {
+    opacity: 1;
+  }
+  
+  .box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -50%;
+    left: -50%;
+    transition-delay: 0.2s;
+  }
+  
+  .box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+  }
+  
+  .box2:hover::before {
+    opacity: 1;
+  }
+  
+  .box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -30%;
+    left: -30%;
+    transition-delay: 0.4s;
+  }
+  
+  .box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  }
+  
+  .box3:hover::before {
+    opacity: 1;
+  }
+  
+  .box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box4 {
+    width: 10%;
+    height: 10%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.6s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+  
+  .card:hover .logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+  }

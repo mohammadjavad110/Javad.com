@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'OS';
+    src: url(../font/OpenSans-Regular.woff);
+}
+@font-face {
+    font-family: 'OS-B';
+    src: url(../font/OpenSans-Bold.woff);
+}
+@font-face {
+    font-family: 'OX';
+    src: url(../font/OpenSans-Regular.woff);
+}
+ @font-face {
+    font-family: 'OX-B';
+    src: url(../font/OpenSans-Bold.woff);
+ }
+
+

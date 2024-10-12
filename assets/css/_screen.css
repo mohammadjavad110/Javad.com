@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #000; /* پس‌زمینه مشکی */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* صفحه به طور کامل پر می‌شود */
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    width: 100%; /* ویدیو تمام عرض کانتینر را می‌گیرد */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+    width: 100%;
+}
+
+button, input[type="range"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="range"]:hover {
+    background-color: #ffbf00; /* تغییر رنگ دکمه‌ها هنگام هاور */
+}
+
+#progressBar {
+    width: 50%;
+}
+
+#volumeBar {
+    width: 120px;
+}
+
+#currentTime, #duration {
+    min-width: 50px;
+    text-align: center;
+}
